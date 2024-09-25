@@ -1,0 +1,220 @@
+<!-- This project uses DataTables (https://datatables.net) licensed under the MIT License.-->
+<!--This project uses jQuery (https://jquery.com) licensed under the MIT License.-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co2-Footprint: CO2-Emissionen von Unternehmen in verschiedenen Ländern. Der Titel der Webseite: Global Co2 Insights: Transparenz für eine nachhaltige Zukunft.">
+    <meta name="author" content="Laura Braun, 92201359">
+    <meta name="keywords" content="Klimawandel, CO2-Footprint, Co2-Tracker, Non-Profit-Organisation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+
+    <title>CO2-Footprint Tracker</title>
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+
+    <header class="mitte">
+
+        <img width= "150" src="img/logo.png" alt="Logo von CarbonClarity">
+            <button id="localNavToggle">Menü</button>
+
+        <nav id="localNavMenu" class="local-nav-dropdown" aria-label="Menü">
+            <ul>
+                    <li><a  href="/">Startseite</a></li>
+                    <li><a  href="/#about">Über uns</a></li>
+                    <li><a  href="/#contact" >Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="background">
+        <h1 class="headline"> Global CO<sub>2</sub>-Insights: Transparenz für eine nachhaltige Zukunft</h1>
+        <img class= "header-image" src="/img/background.jpg" alt="Dunkle Erdtöne, etwas Erde zu sehen aus der ein kleines grünes Plänzchen wächst, auf dem mehrere kleine Wassertropfen zu sehen sind">  
+    </div>
+
+    <section id="about">
+    <nav aria-label="Sektionen über uns">
+        <ul class="mitte">
+                <li><a href="#co2-emissions" >CO<sub>2</sub>-Emissionen</a></li>
+                <li><a href="#mission">Unsere Mission</a></li>
+                <li><a href="#team">Unser Team</a></li>
+                <li><a href="#history">Unsere Geschichte</a></li>
+        </ul>
+    </nav>
+
+    <p> Global CO<sub>2</sub>-Insights ist eine Non-Profit-Organisation, die sich der Bekämpfung des Klimawandels durch Transparenz und Aufklärung verschrieben hat. Unsere Mission ist es, der Öffentlichkeit fundierte und leicht zugängliche Informationen über die jährlichen CO<sub>2</sub>-Emissionen von Unternehmen und Ländern weltweit bereitzustellen.
+
+        Durch die Bereitstellung umfassender Daten und Analysen möchten wir das Bewusstsein für die Auswirkungen des CO<sub>2</sub>-Ausstoßes schärfen und nachhaltige Handlungen fördern. Unsere Plattform bietet detaillierte Einblicke und Visualisierungen, die es jedem ermöglichen, informierte Entscheidungen zu treffen und aktiv zur Reduzierung des globalen CO<sub>2</sub>-Fußabdrucks beizutragen.
+  
+        Wir arbeiten eng mit internationalen Partnern, Wissenschaftlern und politischen Entscheidungsträgern zusammen, um eine breite Akzeptanz und Umsetzung von Klimaschutzmaßnahmen zu fördern. Gemeinsam können wir eine nachhaltigere und umweltfreundlichere Zukunft gestalten.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, quidem illum ad, praesentium illo necessitatibus excepturi reprehenderit mollitia culpa ullam nam temporibus magni nisi nostrum. Obcaecati minus cumque aspernatur iusto.</p>
+    
+    </section>
+
+    <section id="co2-emissions">
+            <main>
+                <section class="content">
+               <h2>Übersicht CO<sub>2</sub>-Footprint</h2>
+               <table id="example" class="display">
+                <thead>
+                    <tr>
+                        <th>Land</th>
+                        <th>Unternehmen</th>
+                        <th>Emissionen (in Tonnen)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deutschland</td>
+                        <td>Unternehmen A</td>
+                        <td>2.000</td>
+                    </tr>
+                    <tr>
+                        <td>USA</td>
+                        <td>Unternehmen B</td>
+                        <td>100.090.078</td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>Unternehmen C</td>
+                        <td>150.210</td>
+                    </tr>
+                    <tr>
+                        <td>Frankreich</td>
+                        <td>Unternehmen D</td>
+                        <td>204</td>
+                    </tr>
+                    <tr>
+                        <td>Deutschland</td>
+                        <td>Unternehmen E</td>
+                        <td>1.190.080</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>Unternehmen G</td>
+                        <td>151.099.987</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>Unternehmen H</td>
+                        <td>521.035</td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>Unternehmen I</td>
+                        <td>120.390.099</td>
+                    </tr>
+                    <tr>
+                        <td>England</td>
+                        <td>Unternehmen J</td>
+                        <td>400.079</td>
+                    </tr>
+                    <tr>
+                        <td>Indien</td>
+                        <td>Unternehmen K</td>
+                        <td>170.034.000</td>
+                    </tr>
+                    <tr>
+                        <td>Indien</td>
+                        <td>Unternehmen L</td>
+                        <td>99.456</td>
+                    </tr>
+                    <tr>
+                        <td>Russland</td>
+                        <td>Unternehmen M</td>
+                        <td>1.112.990</td>
+                    </tr>
+                    <tr>
+                        <td>Frankreich</td>
+                        <td>Unternehmen N</td>
+                        <td>190.046.456</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+              
+    <!-- DataTables JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#example').DataTable({
+                "paging": false, // Deaktiviert die Paginierung
+                "info": false,   // Deaktiviert die Informationsanzeige
+            });
+        });
+    </script>  
+
+<section id="organization">
+    <article id="mission">
+        <h3>Unsere Mission</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit!</p>
+    </article>
+
+    <article id="team">
+        <h3>Team</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit!</p>
+    </article>
+
+    <article id="history">
+        <h3>Unsere Geschichte</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus accusamus, a esse eveniet ratione! Repudiandae, obcaecati nihil, consequuntur laudantium mollitia expedita iusto minus molestiae tempora adipisci distinctio velit odit!</p>
+    </article>
+</section>
+
+         <section id="contact">
+            <h2>So kontaktiert Ihr uns</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt possimus dicta laboriosam veniam, atque corporis debitis labore nemo praesentium accusamus optio sapiente doloremque modi illum nobis, dolores quaerat asperiores.
+            </p>
+
+            <div>
+                <nav aria-label="Social Media Links">
+                    <ul class="social-media">
+                            <li><a class= "buttonF" href="https://www.facebook.com" >Facebook</a></li>
+                            <li><a class= "buttonI" href="https://www.instagram.com">Instagram</a></li>
+                    </ul>
+                </nav>
+              </div>
+         </section>
+       
+    <footer>
+        <p>© 2024 Non-Profit Organization. All rights reserved.</p>
+        <nav aria-label="Rechtliche Links">
+            <ul class="mitte">
+               <li><a href="/impressum.html">Impressum</a></li>
+               <li><a href="/datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const userLang = navigator.language || navigator.userLanguage;
+            const rtlLangs = ['ar', 'he', 'fa'];
+    
+            if (rtlLangs.includes(userLang.split('-')[0])) {
+                document.body.classList.add('rtl');
+            } else {
+                document.body.classList.add('ltr');
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
+
